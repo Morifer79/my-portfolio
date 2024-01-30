@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="contacts-page-title">Contacts</title>
+    <meta name="color-scheme" content="light dark"/>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43"/>
+
+    <script>
+      if(matchMedia('(prefers-color-scheme: dark)').media === 'not all'){
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="./css/light.css" onload=document.documentElement.style.display =\`\`">');
+      }
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/light.css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="./css/dark.css" media="(prefers-color-scheme: dark)"/>
+  </head>
+
+  <body>
+    <header>
+      <a href="#footer">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav class="navigation">
+        <a href="./index.html" data-lang="contacts-header-home">Home</a>
+        <a href="./portfolio.html" data-lang="contacts-header-portfolio">Portfolio</a>
+        <a href="./gallery.html" data-lang="contacts-header-gallery">Gallery</a>
+        <a href="./contacts.html" class="active" data-lang="contacts-header-contacts">Contacts</a>
+      </nav>
+      <div class="buttons-box">
+        <button data-btn="en" class="header-btn header-btn-en">EN</button>
+        <button data-btn="ua" class="header-btn header-btn-ua">UA</button>
+        <button data-btn="ru" class="header-btn header-btn-ru">RU</button>
+      </div>
+    </header>
+    <fieldset class="switcher">
+      <legend class="switcher-legend">Схема</legend>
+      <input class="switcher-radio switcher-radio-light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+      <input class="switcher-radio switcher-radio-auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+      <input class="switcher-radio switcher-radio-dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+      <div class="switcher-status"></div>
+    </fieldset>
+
+    <section class="parallax relative">
+      <div class="twilight"></div>
+      <img src="./images/parallax/hill1.png" id="hill1" />
+      <img src="./images/parallax/hill2.png" id="hill2" />
+      <img src="./images/parallax/hill3.png" id="hill3" />
+      <img src="./images/parallax/hill4.png" id="hill4" />
+      <img src="./images/parallax/hill5.png" id="hill5" />
+      <img src="./images/parallax/tree.png" id="tree" />
+      <img src="./images/parallax/leaf.png" id="leaf" />
+      <img src="./images/parallax/plant.png" id="plant" />
+      <p data-lang="contacts-subtext">Communication is an integral part of our daily lives, allowing us to express our thoughts, share our emotions, and connect with others. At certain times in our lives, we especially feel the need to communicate, whether it is for support, the joy of conversation or simply to share our experiences. Interacting with others enriches our relationships, fosters understanding of differences, and creates space for mutual support and inspiration. Communication is thus a key element of human life, benefiting both our emotional well-being and society as a whole.</p>
+      <p class="text-hint" data-lang="contacts-hint">Click on the cube to follow the link</p>
+    </section>
+    <ul class="m relative pull-right">
+      <li class="m1 list-item relative pull-left" tabindex="1"><img src="./images/cube/linkedin-m.jpg" alt="linkedin"/></li>
+      <li class="m2 list-item relative pull-left" tabindex="2"><img src="./images/cube/watsapp-m.jpg" alt="watsapp"/></li>
+      <li class="m3 list-item relative pull-left" tabindex="3"><img src="./images/cube/viber-m.jpg" alt="viber"/></li>
+      <li class="m4 list-item relative pull-left" tabindex="4"><img src="./images/cube/telegram-m.jpg" alt="telegram"/></li>
+      <li class="m5 list-item relative pull-left" tabindex="5"><img src="./images/cube/instagram-m.jpg" alt="instagram"/></li>
+      <li class="m6 list-item relative pull-left" tabindex="6"><img src="./images/cube/proton-mail-m.jpg" alt="proton"/></li>
+      <li class="cube-wrap">
+        <div class="m-cube">
+          <div class="m-front"><a href="https://www.linkedin.com/in/hennadii-laktionov-frontend-developer/" target="_blan" ref="noopener noreferrer"><img src="./images/cube/linkedin.jpg" alt="linkedin"/></a></div>
+          <div class="m-right"><a href="https://wa.me/qr/GILNVEA45WWKE1" target="_blan" ref="noopener noreferrer"><img src="./images/cube/watsapp.jpg" alt="watsapp"/></div></a>
+          <div class="m-top"><a href="https://vb.me/letsChatOnViber" target="_blan" ref="noopener noreferrer"><img src="./images/cube/viber.jpg" alt="viber"/></div></a>
+          <div class="m-left"><a href="https://t.me/aratama79" target="_blan" ref="noopener noreferrer"><img src="./images/cube/telegram.jpg" alt="telegram"/></div></a>
+          <div class="m-bottom"><a href="https://www.instagram.com/aratama79/" target="_blan" ref="noopener noreferrer"><img src="./images/cube/instagram.jpg" alt="instagram"/></div></a>
+          <div class="m-back"><a href="mailto:cyber-morifer@proton.me" target="_blan" ref="noopener noreferrer"><img src="./images/cube/proton-mail.jpg" alt="proton-mail"/></div></a>
+        </div>
+      </li>
+    </ul>
+
+    <footer id="footer" class="footer">
+      <svg
+        class="waves relative"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="waves-parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="var(--fourth-wave)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="var(--third-wave)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="var(--second-wave)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--main-invers)" />
+        </g>
+      </svg>
+
+      <div class="content relative flex">
+        <h2 class="bye" data-lang="contacts-footer-text">Thank you for visiting my space - come back again...</h2>
+      </div>
+    </footer>
+    <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/all-langs.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

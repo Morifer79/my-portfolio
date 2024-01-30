@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="home-page-title">Home</title>
+
+    <meta name="color-scheme" content="light dark"/>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43"/>
+
+    <script>
+      if(matchMedia('(prefers-color-scheme: dark)').media === 'not all'){
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="./css/light.css" onload=document.documentElement.style.display =\`\`">');
+      }
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/light.css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="./css/dark.css" media="(prefers-color-scheme: dark)"/>
+  </head>
+  <body>
+    <header>
+      <a href="#footer">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav class="navigation">
+        <a href="./index.html" class="active" data-lang="home-header-home">Home</a>
+        <a href="./portfolio.html" data-lang="home-header-portfolio">Portfolio</a>
+        <a href="./gallery.html" data-lang="home-header-gallery">Gallery</a>
+        <a href="./contacts.html" data-lang="home-header-contacts">Contacts</a>
+      </nav>
+      <div class="buttons-box">
+        <button data-btn="en" class="header-btn header-btn-en">EN</button>
+        <button data-btn="ua" class="header-btn header-btn-ua">UA</button>
+        <button data-btn="ru" class="header-btn header-btn-ru">RU</button>
+      </div>
+    </header>
+    <fieldset class="switcher">
+      <legend class="switcher-legend">Схема</legend>
+      <input class="switcher-radio switcher-radio-light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+      <input class="switcher-radio switcher-radio-auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+      <input class="switcher-radio switcher-radio-dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+      <div class="switcher-status"></div>
+    </fieldset>
+    <section class="parallax relative">
+      <div class="twilight"></div>
+      <img src="./images/parallax/hill1.png" id="hill1" />
+      <img src="./images/parallax/hill2.png" id="hill2" />
+      <img src="./images/parallax/hill3.png" id="hill3" />
+      <img src="./images/parallax/hill4.png" id="hill4" />
+      <img src="./images/parallax/hill5.png" id="hill5" />
+      <img src="./images/parallax/tree.png" id="tree" />
+      <h1 id="text">
+        <b data-lang="home-uptext">WELCOME!</b>
+        <span data-lang="home-subtext">Each time we leave the house, we return to it differently.</span>
+      </h1>
+      <img src="./images/parallax/leaf.png" id="leaf" />
+      <img src="./images/parallax/plant.png" id="plant" />
+    </section>
+
+    <section class="sec relative">
+      <h2 data-lang="home-sectitle">WHO AM I</h2>
+      <div class="ava-wrapper relative pull-left">
+        <div class="ava-main"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+        <div class="overlay relative"></div>
+      </div>
+
+      <p data-lang="home-p1">
+        At one time everyone has asked this question and everyone has found
+        their answers... It is not surprising that one of the commands that
+        outputs the user's name sounds the same way. You will agree that
+        everything is simpler and unambiguous here. I won't make it any more
+        complicated than that either.
+      </p>
+      <p data-lang="home-p2">
+        I am Hennadii Laktionov from Ukraine. Before the war, I
+        wrote poems and stories, went on hikes, studied languages, and was fond
+        of African and Asian cultures. Half of his life worked in supply. But,
+        as Shakespeare wrote, "Nothing lasts forever under the moon...". Losing
+        a job is probably the least of the possible losses, but it is enough
+        incentive for new beginnings. For me, it became the direction of IT. I
+        would be lying if I said that I had not touched it before, but in such a
+        context and so professionally - not. Thus, in January 2024 I finished
+        the course and received a certificate of Fullstack developer. I don't
+        know how my fate will develop further, whether it will be a trench or an
+        office chair, but at the moment I decided to create this site, where I
+        will present my work during the period of training. Usually, the
+        portfolio exhibits their exemplary works, I will provide it as it is...
+        many points are controversial, but were interpreted by the terms of
+        technical tasks and layouts because there is...
+      </p>
+      <p data-lang="home-p3">
+        Once again, welcome, and if you are here, then everything is not in
+        vain. Peace be with you!
+      </p>
+    </section>
+
+    <footer id="footer" class="footer relative">
+      <svg
+        class="waves relative"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="waves-parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="var(--fourth-wave)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="var(--third-wave)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="var(--second-wave)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--main-invers)" />
+        </g>
+      </svg>
+
+      <div class="content relative flex">
+        <a href="/"><img src="./images/logo.png" alt="logo" class="logo down" /></a>
+
+        <ul class="redirect">
+          <li class="redirect-item relative"><a href="./index.html" data-lang="home-footer-home">Home</a></li>
+          <li class="redirect-item relative"><a href="./portfolio.html" data-lang="home-footer-portfolio">Portfolio</a></li>
+          <li class="redirect-item relative"><a href="./gallery.html" data-lang="home-footer-gallery">Gallery1</a></li>
+          <li class="redirect-item relative"><a href="./contacts.html" data-lang="home-footer-contacts">Contacts</a></li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://www.linkedin.com/in/hennadii-laktionov-frontend-developer/" target="_blank" rel="noreferrer noopener" >
+              <svg class="social-img linkedin">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://wa.me/qr/GILNVEA45WWKE1"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="social-img whatsapp">
+                <use href="./images/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://vb.me/letsChatOnViber" target="_blank" rel="noreferrer noopener">
+              <svg class="social-img viber">
+                <use href="./images/sprite.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/aratama79" target="_blank" rel="noreferrer noopener">
+              <svg class="social-img telegram">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/aratama79/" target="_blank" rel="noreferrer noopener">
+              <svg class="social-img instagram">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="mailto:cyber-morifer@proton.me"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="social-img envelop">
+                <use href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://github.com/Morifer79"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="social-img github">
+                <use href="./images/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/all-langs.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

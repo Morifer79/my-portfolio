@@ -1,0 +1,93 @@
+body {
+  --sky-color: #c7cbcc;
+  --sky-image: url("../images/theme/light-sky.jpg");
+}
+
+.twilight {
+  --twilight-color: #fff566;
+  --twilight-shadow: rgba(222, 168, 33, 0.4);
+  --twilight-glow: rgba(70, 130, 180, 0.4);
+}
+
+.switcher-radio {
+  filter: invert(0);
+}
+
+.switcher-radio:checked {
+  filter: invert(1);
+}
+
+.switcher-status {
+  filter: invert(0);
+}
+
+.content {
+  --main-invers: #fff;
+}
+
+.waves-parallax {
+  --main-invers: #fff;
+  --second-wave: rgba(255, 255, 255, 0.3);
+  --third-wave: rgba(255, 255, 255, 0.5);
+  --fourth-wave: rgba(255, 255, 255, 0.7);
+}
+
+.social-img {
+  --bg-color: #003329;
+}
+
+.overlay {
+  --bg-overlay: #003329;
+}
+
+section.module.parallax-0 h2{
+  --text-color: rgba(255, 255, 255, 0.8);
+  --text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#text,
+.parallax > p,
+.bye {
+  --text-color: #fff;
+  --text-shadow: 4px 0 4px #003329, 0 4px 4px #003329, -4px 0 4px #003329,
+    0 -4px 4px #003329;
+}
+
+.front {
+  --front-color: #32cd32;
+}
+
+.back {
+  --back-color: #ffad33;
+}
+
+.right {
+  --right-color: #fa8072;
+}
+
+.top {
+  --top-color: #b0e0e6;
+}
+
+.header-btn-active {
+  --active-shadow: 0 0 0 4px #000;
+}
+
+.switcher-status{
+  --wrapper-shadow: 4px 0 4px #359381, 0 4px 4px #359381, -4px 0 4px #359381,
+    0 -4px 4px #359381;
+}
+
+.menu nav ul,
+.down:hover,
+.logo:hover,
+.navigation a:hover,
+.navigation a.active,
+.buttons-box{
+  --active-wrapper-shadow: 4px 0 4px #359381, 0 4px 4px #359381, -4px 0 4px #359381,
+    0 -4px 4px #359381;
+}
+
+.down {
+  --bg-down-logo: #003329;
+}

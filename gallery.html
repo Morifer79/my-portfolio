@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="gallery-page-title">Gallery</title>
+    <meta name="color-scheme" content="light dark"/>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43"/>
+
+    <script>
+      if(matchMedia('(prefers-color-scheme: dark)').media === 'not all'){
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="./css/light.css" onload=document.documentElement.style.display =\`\`">');
+      }
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/light.css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="./css/dark.css" media="(prefers-color-scheme: dark)"/>
+  </head>
+
+  <body>
+    <header>
+      <a href="#footer">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav class="navigation">
+        <a href="./index.html" data-lang="gallery-header-home">Home</a>
+        <a href="./portfolio.html" data-lang="gallery-header-portfolio">Portfolio</a>
+        <a href="./gallery.html" class="active" data-lang="gallery-header-gallery">Gallery</a>
+        <a href="./contacts.html" data-lang="gallery-header-contacts">Contacts</a>
+      </nav>
+      <div class="buttons-box">
+        <button data-btn="en" class="header-btn header-btn-en">EN</button>
+        <button data-btn="ua" class="header-btn header-btn-ua">UA</button>
+        <button data-btn="ru" class="header-btn header-btn-ru">RU</button>
+      </div>
+    </header>
+    <fieldset class="switcher">
+      <legend class="switcher-legend">Схема</legend>
+      <input class="switcher-radio switcher-radio-light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+      <input class="switcher-radio switcher-radio-auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+      <input class="switcher-radio switcher-radio-dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+      <div class="switcher-status"></div>
+    </fieldset>
+
+    <div class="menu">
+      <nav class="text-center">
+        <ul class="inline-block">
+          <li class="pull-left active">
+            <a href="#" data-direction="front">HTML</a>
+          </li>
+          <li class="pull-left">
+            <a href="#" data-direction="back">JavaScript</a>
+          </li>
+          <li class="pull-left">
+            <a href="#" data-direction="top">React</a>
+          </li>
+          <li class="pull-left">
+            <a href="#" data-direction="right">Node</a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="wrap">
+      <div class="cubec relative">
+
+        <section class="page active face front" id="HTML">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <ul class="m relative pull-right">
+                <li class="m1 list-item relative pull-left" tabindex="1"><img src="//unsplash.it/500/500?random=2" alt=""/></li>
+                <li class="m2 list-item relative pull-left" tabindex="2"><img src="//unsplash.it/500/500?random=2" alt=""/></li>
+                <li class="m3 list-item relative pull-left" tabindex="3"><img src="//unsplash.it/500/500?random=3" alt=""/></li>
+                <li class="m4 list-item relative pull-left" tabindex="4"><img src="//unsplash.it/500/500?random=4" alt=""/></li>
+                <li class="m5 list-item relative pull-left" tabindex="5"><img src="//unsplash.it/500/500?random=5" alt=""/></li>
+                <li class="m6 list-item relative pull-left" tabindex="6"><img src="//unsplash.it/500/500?random=6" alt=""/></li>
+                <li class="cube-wrap">
+                  <div class="m-cube">
+                    <div class="m-front"><img src="//unsplash.it/500/500?random=2" alt=""/></div>
+                    <div class="m-right"><img src="//unsplash.it/500/500?random=2" alt=""/></div>
+                    <div class="m-top"><img src="//unsplash.it/500/500?random=3" alt=""/></div>
+                    <div class="m-left"><img src="//unsplash.it/500/500?random=4" alt=""/></div>
+                    <div class="m-bottom"><img src="//unsplash.it/500/500?random=5" alt=""/></div>
+                    <div class="m-back"><img src="//unsplash.it/500/500?random=6" alt=""/></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="page face back" id="JavaScript">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <ul class="m relative pull-right">
+                <li class="m1 list-item relative pull-left" tabindex="1"><img src="//unsplash.it/500/500?random=1" alt=""/></li>
+                <li class="m2 list-item relative pull-left" tabindex="2"><img src="//unsplash.it/500/500?random=2" alt=""/></li>
+                <li class="m3 list-item relative pull-left" tabindex="3"><img src="./default.jpg" alt=""/></li>
+                <li class="m4 list-item relative pull-left" tabindex="4"><img src="//unsplash.it/500/500?random=4" alt=""/></li>
+                <li class="m5 list-item relative pull-left" tabindex="5"><img src="//unsplash.it/500/500?random=5" alt=""/></li>
+                <li class="m6 list-item relative pull-left" tabindex="6"><img src="//unsplash.it/500/500?random=6" alt=""/></li>
+                <li class="cube-wrap">
+                  <div class="m-cube">
+                    <div class="m-front"><img src="//unsplash.it/500/500?random=1" alt=""/></div>
+                    <div class="m-right"><img src="//unsplash.it/500/500?random=2" alt=""/></div>
+                    <div class="m-top"><img src="./default.jpg" alt=""/></div>
+                    <div class="m-left"><img src="//unsplash.it/500/500?random=4" alt=""/></div>
+                    <div class="m-bottom"><img src="//unsplash.it/500/500?random=5" alt=""/></div>
+                    <div class="m-back"><img src="//unsplash.it/500/500?random=6" alt=""/></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="page face top" id="React">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <ul class="m relative pull-right">
+                <li class="m1 list-item relative pull-left" tabindex="1"><img src="//unsplash.it/500/500?random=1" alt=""/></li>
+                <li class="m2 list-item relative pull-left" tabindex="2"><img src="//unsplash.it/500/500?random=2" alt=""/></li>
+                <li class="m3 list-item relative pull-left" tabindex="3"><img src="//unsplash.it/500/500?random=3" alt=""/></li>
+                <li class="m4 list-item relative pull-left" tabindex="4"><img src="//unsplash.it/500/500?random=4" alt=""/></li>
+                <li class="m5 list-item relative pull-left" tabindex="5"><img src="//unsplash.it/500/500?random=5" alt=""/></li>
+                <li class="m6 list-item relative pull-left" tabindex="6"><img src="./default.jpg" alt=""/></li>
+                <li class="cube-wrap">
+                  <div class="m-cube">
+                    <div class="m-front"><img src="//unsplash.it/500/500?random=1" alt=""/></div>
+                    <div class="m-right"><img src="//unsplash.it/500/500?random=2" alt=""/></div>
+                    <div class="m-top"><img src="//unsplash.it/500/500?random=3" alt=""/></div>
+                    <div class="m-left"><img src="//unsplash.it/500/500?random=4" alt=""/></div>
+                    <div class="m-bottom"><img src="//unsplash.it/500/500?random=5" alt=""/></div>
+                    <div class="m-back"><img src="./default.jpg" alt=""/></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="page face right" id="Node">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <ul class="m relative pull-right">
+                <li class="m1 list-item relative pull-left" tabindex="1"><img src="//unsplash.it/500/500?random=1" alt=""/></li>
+                <li class="m2 list-item relative pull-left" tabindex="2"><img src="//unsplash.it/500/500?random=2" alt=""/></li>
+                <li class="m3 list-item relative pull-left" tabindex="3"><img src="//unsplash.it/500/500?random=3" alt=""/></li>
+                <li class="m4 list-item relative pull-left" tabindex="4"><img src="//unsplash.it/500/500?random=4" alt=""/></li>
+                <li class="m5 list-item relative pull-left" tabindex="5"><img src="./default.jpg" alt=""/></li>
+                <li class="m6 list-item relative pull-left" tabindex="6"><img src="//unsplash.it/500/500?random=6" alt=""/></li>
+                <li class="cube-wrap">
+                  <div class="m-cube">
+                    <div class="m-front"><img src="//unsplash.it/500/500?random=1" alt=""/></div>
+                    <div class="m-right"><img src="//unsplash.it/500/500?random=2" alt=""/></div>
+                    <div class="m-top"><img src="//unsplash.it/500/500?random=3" alt=""/></div>
+                    <div class="m-left"><img src="//unsplash.it/500/500?random=4" alt=""/></div>
+                    <div class="m-bottom"><img src="./default.jpg" alt=""/></div>
+                    <div class="m-back"><img src="//unsplash.it/500/500?random=6" alt=""/></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="page face bottom" id="blog">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">blog Page</div>
+          </div>
+        </section>
+        <section class="page face left" id="article">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">article Page</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/all-langs.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

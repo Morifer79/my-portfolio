@@ -1,0 +1,94 @@
+body {
+  --sky-color: #273a43;
+  --sky-image: url("../images/theme/dark-sky.jpg");
+}
+
+.twilight {
+  --twilight-color: #fffff0;
+  --twilight-shadow: rgba(255, 160, 122, 0.6);
+  --twilight-glow: rgba(225, 225, 225, 0.7);
+}
+
+.switcher-radio {
+  filter: invert(1);
+}
+
+.switcher-radio:checked {
+  filter: invert(0);
+}
+
+.switcher-status {
+  filter: invert(1);
+}
+
+
+.content{
+  --main-invers: #000;
+}
+
+.waves-parallax{
+  --main-invers: #000;
+  --second-wave: rgba(0,0,0,0.3);
+  --third-wave: rgba(0,0,0,0.5);
+  --fourth-wave: rgba(0,0,0,0.7);
+}
+
+.social-img{
+  --bg-color: #fff;
+}
+
+.overlay{
+  --bg-overlay: rgba(0, 0, 0, 0.98);
+}
+
+section.module.parallax-0 h2{
+  --text-color: rgba(0, 0, 0, 0.8);
+  --text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#text,
+.parallax > p,
+.bye {
+  --text-color: #000;
+  --text-shadow:4px 0 4px #fff, 0 4px 4px #fff, -4px 0 4px #fff,
+    0 -4px 4px #fff;
+}
+
+.front {
+  --front-color: #181818;
+}
+
+.back {
+  --back-color: #303030;
+}
+
+.right {
+  --right-color: #606060;
+}
+
+.top {
+  --top-color: #404040;
+}
+
+.header-btn-active {
+  --active-shadow: 0 0 0 4px #fff;
+}
+
+.switcher-status{
+  --wrapper-shadow: 4px 0 4px #000, 0 4px 4px #000, -4px 0 4px #000,
+    0 -4px 4px #000;
+}
+
+.menu nav ul,
+.down:hover,
+.logo:hover,
+.navigation a:hover,
+.navigation a.active,
+.buttons-box{
+  --active-wrapper-shadow: 4px 0 4px #fff, 0 4px 4px #fff, -4px 0 4px #fff,
+    0 -4px 4px #fff;
+}
+
+.down {
+  --bg-down-logo: #000;
+}
