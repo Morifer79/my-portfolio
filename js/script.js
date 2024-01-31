@@ -141,12 +141,10 @@ if (animatedElement) {
 
 (function (document, window, $) {
   $(document).ready(function () {
-    // Variables
     var windowWidth = $(window).width(),
       windowHeight = $(window).height(),
       $menu = $(".menu");
 
-    // menu anchor tags
     function menuAnchors() {
       var pageDirection = "";
       var thisElement;
@@ -176,10 +174,8 @@ if (animatedElement) {
     }
     menuAnchors();
     $(window).resize(function () {
-      // Vars
       windowWidth = $(window).width();
       windowHeight = $(window).height();
-      // Functions
     });
   });
 })(document, window, jQuery);
