@@ -26,6 +26,11 @@ const homeTexts = {
     ua: "Галерея",
     ru: "Галерея",
   },
+  "home-header-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
   "home-header-contacts": {
     en: "Contacts",
     ua: "Контакти",
@@ -76,6 +81,11 @@ const homeTexts = {
     ua: "Галерея",
     ru: "Галерея",
   },
+  "home-footer-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
   "home-footer-contacts": {
     en: "Contacts",
     ua: "Контакти",
@@ -104,6 +114,11 @@ const portfolioTexts = {
     ua: "Галерея",
     ru: "Галерея",
   },
+  "portfolio-header-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
   "portfolio-header-contacts": {
     en: "Contacts",
     ua: "Контакти",
@@ -128,6 +143,11 @@ const portfolioTexts = {
     en: "Gallery",
     ua: "Галерея",
     ru: "Галерея",
+  },
+  "portfolio-footer-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
   },
   "portfolio-footer-contacts": {
     en: "Contacts",
@@ -157,7 +177,75 @@ const galleryTexts = {
     ua: "Галерея",
     ru: "Галерея",
   },
+  "gallery-header-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
   "gallery-header-contacts": {
+    en: "Contacts",
+    ua: "Контакти",
+    ru: "Контакты",
+  },
+};
+
+const documentsTexts = {
+  "documents-page-title": {
+    en: "Contacts",
+    ua: "Контакти",
+    ru: "Контакты",
+  },
+  "documents-header-home": {
+    en: "Home",
+    ua: "Головна",
+    ru: "Главная",
+  },
+  "documents-header-portfolio": {
+    en: "Portfolio",
+    ua: "Портфоліо",
+    ru: "Портфолио",
+  },
+  "documents-header-gallery": {
+    en: "Gallery",
+    ua: "Галерея",
+    ru: "Галерея",
+  },
+  "documents-header-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
+  "documents-header-contacts": {
+    en: "Contacts",
+    ua: "Контакти",
+    ru: "Контакты",
+  },
+  "documents-subtext": {
+    en: "Not everything is as it seems, but we are who we are. Sometimes, we seek witnesses to our lives, and at times, we become witnesses for others.",
+    ua: "Усе не те, чим здається, але ми такі, які є, й іноді ми шукаємо свідків свого життя, а іноді стаємо ними для інших.",
+    ru: "Всё не то, чем кажется, но мы такие, какие есть, и иногда мы ищем свидетелей своей жизни, а иногда становимся ими для других.",
+  },
+  "documents-footer-home": {
+    en: "Home",
+    ua: "Головна",
+    ru: "Главная",
+  },
+  "documents-footer-portfolio": {
+    en: "Portfolio",
+    ua: "Портфоліо",
+    ru: "Портфолио",
+  },
+  "documents-footer-gallery": {
+    en: "Gallery",
+    ua: "Галерея",
+    ru: "Галерея",
+  },
+  "documents-footer-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
+  },
+  "documents-footer-contacts": {
     en: "Contacts",
     ua: "Контакти",
     ru: "Контакты",
@@ -217,6 +305,9 @@ function checkPagePathName() {
       break;
     case "/gallery.html":
       currentText = galleryTexts;
+      break;
+    case "/documents.html":
+      currentText = documentsTexts;
       break;
     case "/contacts.html":
       currentText = contactsTexts;
