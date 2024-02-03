@@ -41,9 +41,14 @@ body {
   --bg-overlay: rgba(0, 0, 0, 0.98);
 }
 
-section.module.parallax-0 h2{
+section.module.parallax-0 h2:not(.only-white){
   --text-color: rgba(0, 0, 0, 0.8);
   --text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+section.module.parallax-0 h2.only-white {
+  --text-color: rgba(255, 255, 255, 0.8);
+  --text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #text,

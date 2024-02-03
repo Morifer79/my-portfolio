@@ -268,6 +268,11 @@ header {
   block-size: 100vh;
 }
 
+.pure {
+  align-items: end;
+  padding-block-end: 10%;
+}
+
 .parallax > p {
   color: var(--text-color);
   text-shadow: var(--text-shadow);
@@ -396,16 +401,56 @@ section.module.parallax-0 h2 {
   text-shadow: var(text-shadow);
 }
 
-section.module.parallax-1 {
-  background-image: url("https://images.unsplash.com/photo-1458640904116-093b74971de9?crop=entropy&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700");
+.vertical-text {
+  position: absolute;
+  top: auto;
+  right: -200px;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
 }
 
-section.module.parallax-2 {
-  background-image: url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?crop=entropy&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700");
+section.module.parallax-11 {
+  background-image: url("../images/portfolio/rental.jpg");
+}
+
+section.module.parallax-10 {
+  background-image: url("../images/portfolio/phonebook.jpg");
+}
+
+section.module.parallax-9 {
+  background-image: url("../images/portfolio/movie.jpg");
+}
+
+section.module.parallax-8 {
+  background-image: url("../images/portfolio/feedback.jpg");
+}
+
+section.module.parallax-7 {
+  background-image: url("../images/portfolio/react-image-search.jpg");
+}
+
+section.module.parallax-6 {
+  background-image: url("../images/portfolio/bookshelf.jpg");
+}
+
+section.module.parallax-5 {
+  background-image: url("../images/portfolio/img-search.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../images/portfolio/breed.jpg");
 }
 
 section.module.parallax-3 {
-  background-image: url("https://images.unsplash.com/photo-1437652010333-fbf2cd02a4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=9de65fa9bbcbd2401f3cb9cc3c8cf582");
+  background-image: url("../images/portfolio/watch.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("../images/portfolio/web-studio.jpg");
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/portfolio/mavi.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -422,7 +467,7 @@ section.module.parallax-3 {
 
 @media all and (min-width: 960px) {
   section.module.parallax-0 h2 {
-    font-size: 160px;
+    font-size: 5.8rem;
   }
 }
 
@@ -503,7 +548,7 @@ section.module.parallax-3 {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.gallery-text-hint{
+.gallery-text-hint {
   position: absolute;
   bottom: -350px;
   left: -250%;
