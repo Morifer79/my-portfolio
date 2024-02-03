@@ -92,3 +92,8 @@ section.module.parallax-0 h2{
 .down {
   --bg-down-logo: #000;
 }
+
+.button-flash {
+  --bg-btn: #fff;
+  --shadow-btn: 0 0 40px 40px #000 inset, 0 0 0 0 #000;
+}

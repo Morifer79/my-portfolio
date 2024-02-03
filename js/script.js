@@ -179,3 +179,11 @@ if (animatedElement) {
     });
   });
 })(document, window, jQuery);
+
+// ***********************************************************
+
+$('.button-flash').on('click', function() {
+  $('.box').toggleClass('animated');
+});
+
+// ***********************************************************
