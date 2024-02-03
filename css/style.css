@@ -277,7 +277,7 @@ header {
   color: var(--text-color);
   text-shadow: var(--text-shadow);
   text-align: justify;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   z-index: 1;
   max-inline-size: 560px;
@@ -297,14 +297,14 @@ header {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  font-size: 4em;
+  font-size: 4rem;
   z-index: 0;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
 
 #text > span {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .sec {
@@ -320,7 +320,7 @@ header {
 }
 
 .sec p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--white);
   font-weight: 300;
   text-indent: 20px;
@@ -370,12 +370,12 @@ header {
 
 section.module h3 {
   margin-block-end: 40px;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 section.module p {
   margin-block-end: 40px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -395,7 +395,7 @@ section.module.parallax-0 {
 
 section.module.parallax-0 h2 {
   color: var(--text-color);
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 600px;
   font-weight: 700;
   text-shadow: var(text-shadow);
@@ -455,13 +455,13 @@ section.module.parallax-1 {
 
 @media all and (min-width: 600px) {
   section.module h3 {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   section.module.parallax-0 h2 {
-    font-size: 96px;
+    font-size: 6rem;
   }
 }
 
@@ -554,7 +554,7 @@ section.module.parallax-1 {
   left: -250%;
   z-index: 50;
   color: var(--white);
-  font-size: 24px;
+  font-size: 1.5rem;
   inline-size: fit-content;
   transform: rotate(-90deg);
   opacity: 0.5;
@@ -652,7 +652,7 @@ section.module.parallax-1 {
   inline-size: 100%;
   block-size: 100%;
   color: #666;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
@@ -1077,7 +1077,7 @@ section.module.parallax-1 {
     height: 30vh;
   }
   h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -1134,6 +1134,6 @@ section.module.parallax-1 {
 .bye {
   color: var(--text-color);
   text-shadow: var(--text-shadow);
-  font-size: 35px;
+  font-size: 2.1875rem;
   margin: 0 auto;
 }
