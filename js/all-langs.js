@@ -187,6 +187,11 @@ const galleryTexts = {
     ua: "Контакти",
     ru: "Контакты",
   },
+  "gallery-hint": {
+    en: "Click on the cube to go to the link",
+    ua: "Клікніть по кубу для переходу за посиланням",
+    ru: "Кликнете по кубу для перехода по ссылке",
+  },
 };
 
 const documentsTexts = {
