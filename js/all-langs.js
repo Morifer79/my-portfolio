@@ -242,11 +242,6 @@ const galleryTexts = {
     ua: "Контакти",
     ru: "Контакты",
   },
-  "gallery-hint": {
-    en: "Click on the cube to go to the link",
-    ua: "Клікніть по кубу для переходу за посиланням",
-    ru: "Кликнете по кубу для перехода по ссылке",
-  },
 };
 
 const documentsTexts = {
@@ -342,11 +337,6 @@ const contactsTexts = {
     en: "Communication is an integral part of our daily lives, allowing us to express our thoughts, share our emotions, and connect with others. At certain times in our lives, we especially feel the need to communicate, whether it is for support, the joy of conversation or simply to share our experiences. Interacting with others enriches our relationships, fosters understanding of differences, and creates space for mutual support and inspiration. Communication is thus a key element of human life, benefiting both our emotional well-being and society as a whole.",
     ua: "Спілкування - невід'ємна частина нашого повсякденного життя, що дає нам змогу висловлювати свої думки та ділитися емоціями. У певні моменти життя ми відчуваємо потребу в спілкуванні, чи то підтримка, чи то радість спілкування, чи то просто бажання поділитися своїм досвідом. Спілкування з іншими людьми збагачує наші стосунки, сприяє розумінню відмінностей і створює простір для взаємної підтримки та натхнення. Таким чином, спілкування є ключовим елементом нашого життя, що приносить користь як нашому емоційному благополуччю, так і суспільству загалом.",
     ru: "Общение - неотъемлемая часть нашей повседневной жизни, позволяющая нам выражать свои мысли и делиться эмоциями. В определенные моменты жизни мы чувствуем потребность в общении, будь то поддержка, радость общения или просто желание поделиться своим опытом. Общение с другими людьми обогащает наши отношения, способствует пониманию различий и создает пространство для взаимной поддержки и вдохновения. Таким образом, общение является ключевым элементом нашей жизни, приносящим пользу как нашему эмоциональному благополучию, так и обществу в целом.",
-  },
-  "contacts-hint": {
-    en: "Click on the cube to go to the link",
-    ua: "Клікніть по кубу для переходу за посиланням",
-    ru: "Кликнете по кубу для перехода по ссылке",
   },
   "contacts-footer-text": {
     en: "Thank you for visiting my space - come back again...",
