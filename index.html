@@ -1,26 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-lang="home-page-title">Home</title>
 
-    <meta name="color-scheme" content="light dark"/>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc"/>
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43"/>
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#c7cbcc"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#273a43"
+    />
 
     <script>
-      if(matchMedia('(prefers-color-scheme: dark)').media === 'not all'){
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="./css/light.css" onload=document.documentElement.style.display =\`\`">');
+      if (matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+        document.documentElement.style.display = "none";
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" href="./css/light.css" onload=document.documentElement.style.display =\`\`">'
+        );
       }
     </script>
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/light.css" media="(prefers-color-scheme: light)"/>
-    <link rel="stylesheet" href="./css/dark.css" media="(prefers-color-scheme: dark)"/>
+    <link
+      rel="stylesheet"
+      href="./css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
   </head>
   <body>
     <header>
@@ -34,6 +53,33 @@
         <a href="./documents.html" data-lang="home-header-documents">Documents</a>
         <a href="./contacts.html" data-lang="home-header-contacts">Contacts</a>
       </nav>
+      <nav class="navigation-mobile">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-toggle-trigger" for="menu-toggle"></label>
+        <label class="menu-toggle-burger" for="menu-toggle"></label>
+
+        <ul class="menu-body">
+          <li class="menu-body-element">
+            <a href="./index.html" class="active" data-lang="home-header-home">Home</a>
+          </li>
+
+          <li class="menu-body-element">
+            <a href="./portfolio.html" data-lang="home-header-portfolio" >Portfolio</a>
+          </li>
+
+          <li class="menu-body-element">
+            <a href="./gallery.html" data-lang="home-header-gallery">Gallery</a>
+          </li>
+
+          <li class="menu-body-element">
+            <a href="./documents.html" data-lang="home-header-documents">Documents</a>
+          </li>
+
+          <li class="menu-body-element">
+            <a href="./contacts.html" data-lang="home-header-contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
       <div class="buttons-box">
         <button data-btn="en" class="header-btn header-btn-en">EN</button>
         <button data-btn="ua" class="header-btn header-btn-ua">UA</button>
@@ -42,9 +88,28 @@
     </header>
     <fieldset class="switcher">
       <legend class="switcher-legend">Scheme</legend>
-      <input class="switcher-radio switcher-radio-light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
-      <input class="switcher-radio switcher-radio-auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
-      <input class="switcher-radio switcher-radio-dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+      <input
+        class="switcher-radio switcher-radio-light"
+        type="radio"
+        name="color-scheme"
+        value="light"
+        aria-label="Светлая"
+      />
+      <input
+        class="switcher-radio switcher-radio-auto"
+        type="radio"
+        name="color-scheme"
+        value="auto"
+        aria-label="Системная"
+        checked
+      />
+      <input
+        class="switcher-radio switcher-radio-dark"
+        type="radio"
+        name="color-scheme"
+        value="dark"
+        aria-label="Тёмная"
+      />
       <div class="switcher-status"></div>
     </fieldset>
     <section class="parallax relative">
@@ -57,7 +122,9 @@
       <img src="./images/parallax/tree.png" id="tree" />
       <h1 id="text">
         <b data-lang="home-uptext">WELCOME!</b>
-        <span data-lang="home-subtext">Each time we leave the house, we return to it differently.</span>
+        <span data-lang="home-subtext"
+          >Each time we leave the house, we return to it differently.</span
+        >
       </h1>
       <img src="./images/parallax/leaf.png" id="leaf" />
       <img src="./images/parallax/plant.png" id="plant" />
@@ -99,21 +166,21 @@
         complicated than that either.
       </p>
       <p data-lang="home-p2">
-        I am Hennadii Laktionov from Ukraine. Before the war, I
-        wrote poems and stories, went on hikes, studied languages, and was fond
-        of African and Asian cultures. Half of his life worked in supply. But,
-        as Shakespeare wrote, "Nothing lasts forever under the moon...". Losing
-        a job is probably the least of the possible losses, but it is enough
-        incentive for new beginnings. For me, it became the direction of IT. I
-        would be lying if I said that I had not touched it before, but in such a
-        context and so professionally - not. Thus, in January 2024 I finished
-        the course and received a certificate of Fullstack developer. I don't
-        know how my fate will develop further, whether it will be a trench or an
-        office chair, but at the moment I decided to create this site, where I
-        will present my work during the period of training. Usually, the
-        portfolio exhibits their exemplary works, I will provide it as it is...
-        many points are controversial, but were interpreted by the terms of
-        technical tasks and layouts because there is...
+        I am Hennadii Laktionov from Ukraine. Before the war, I wrote poems and
+        stories, went on hikes, studied languages, and was fond of African and
+        Asian cultures. Half of his life worked in supply. But, as Shakespeare
+        wrote, "Nothing lasts forever under the moon...". Losing a job is
+        probably the least of the possible losses, but it is enough incentive
+        for new beginnings. For me, it became the direction of IT. I would be
+        lying if I said that I had not touched it before, but in such a context
+        and so professionally - not. Thus, in January 2024 I finished the course
+        and received a certificate of Fullstack developer. I don't know how my
+        fate will develop further, whether it will be a trench or an office
+        chair, but at the moment I decided to create this site, where I will
+        present my work during the period of training. Usually, the portfolio
+        exhibits their exemplary works, I will provide it as it is... many
+        points are controversial, but were interpreted by the terms of technical
+        tasks and layouts because there is...
       </p>
       <p data-lang="home-p3">
         Once again, welcome, and if you are here, then everything is not in
@@ -155,24 +222,52 @@
             y="5"
             fill="var(--second-wave)"
           />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--main-invers)" />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="7"
+            fill="var(--main-invers)"
+          />
         </g>
       </svg>
 
       <div class="content relative flex">
-        <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo down" /></a>
+        <a href="./index.html"
+          ><img src="./images/logo.png" alt="logo" class="logo down"
+        /></a>
 
         <ul class="redirect">
-          <li class="redirect-item relative"><a href="./index.html" data-lang="home-footer-home">Home</a></li>
-          <li class="redirect-item relative"><a href="./portfolio.html" data-lang="home-footer-portfolio">Portfolio</a></li>
-          <li class="redirect-item relative"><a href="./gallery.html" data-lang="home-footer-gallery">Gallery</a></li>
-          <li class="redirect-item relative"><a href="./documents.html" data-lang="home-footer-documents">Documents</a></li>
-          <li class="redirect-item relative"><a href="./contacts.html" data-lang="home-footer-contacts">Contacts</a></li>
+          <li class="redirect-item relative">
+            <a href="./index.html" data-lang="home-footer-home">Home</a>
+          </li>
+          <li class="redirect-item relative">
+            <a href="./portfolio.html" data-lang="home-footer-portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="redirect-item relative">
+            <a href="./gallery.html" data-lang="home-footer-gallery">Gallery</a>
+          </li>
+          <li class="redirect-item relative">
+            <a href="./documents.html" data-lang="home-footer-documents"
+              >Documents</a
+            >
+          </li>
+          <li class="redirect-item relative">
+            <a href="./contacts.html" data-lang="home-footer-contacts"
+              >Contacts</a
+            >
+          </li>
         </ul>
 
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="https://www.linkedin.com/in/hennadii-laktionov-backend-developer/" target="_blank" rel="noreferrer noopener" >
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/in/hennadii-laktionov-backend-developer/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="social-img linkedin">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
               </svg>
@@ -191,21 +286,36 @@
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://vb.me/letsChatOnViber" target="_blank" rel="noreferrer noopener">
+            <a
+              class="social-link"
+              href="https://vb.me/letsChatOnViber"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="social-img viber">
                 <use href="./images/sprite.svg#icon-viber"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://t.me/aratama79" target="_blank" rel="noreferrer noopener">
+            <a
+              class="social-link"
+              href="https://t.me/aratama79"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="social-img telegram">
                 <use href="./images/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://www.instagram.com/aratama79/" target="_blank" rel="noreferrer noopener">
+            <a
+              class="social-link"
+              href="https://www.instagram.com/aratama79/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="social-img instagram">
                 <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
@@ -238,7 +348,10 @@
         </ul>
       </div>
     </footer>
-    <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      type="module"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
     <script type="module" src="./js/all-langs.js"></script>
     <script type="module" src="./js/script.js"></script>
   </body>

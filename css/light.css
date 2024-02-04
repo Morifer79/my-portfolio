@@ -21,6 +21,7 @@ body {
   filter: invert(0);
 }
 
+.menu-body,
 .content {
   --main-invers: #fff;
 }
@@ -32,6 +33,12 @@ body {
   --fourth-wave: rgba(255, 255, 255, 0.7);
 }
 
+.menu-toggle-trigger,
+.menu-toggle-burger,
+.menu-toggle-burger:before,
+.menu-toggle-burger:after,
+.menu-body-element,
+.menu-body-link,
 .social-img {
   --bg-color: #003329;
 }
@@ -83,6 +90,7 @@ section.module.parallax-0 h2.only-black {
     0 -4px 4px #359381;
 }
 
+.menu-body,
 .menu nav ul,
 .down:hover,
 .logo:hover,

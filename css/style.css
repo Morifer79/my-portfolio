@@ -116,7 +116,17 @@ header {
 }
 
 .navigation {
-  margin-inline-start: 12px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation-mobile{
+    display: none;
+  }
+  .navigation {
+    display: block;
+    margin-inline-start: 12px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -149,10 +159,17 @@ header {
 .buttons-box {
   position: absolute;
   top: 5px;
-  right: 16%;
+  right: 40%;
   padding: 5px;
   box-shadow: var(--active-wrapper-shadow);
   border-radius: 18px;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .buttons-box {
+    right: 16%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -307,10 +324,17 @@ header {
   color: var(--text-color);
   text-shadow: var(--text-shadow);
   text-align: justify;
-  font-size: 1.25rem;
-  font-weight: 600;
-  z-index: 1;
-  max-inline-size: 560px;
+  font-size: 1rem;
+  z-index: 0;
+  max-inline-size: 280px;
+}
+
+@media (min-width: 768px) {
+  .parallax > p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    max-inline-size: 560px;
+  }
 }
 
 .parallax img {
@@ -327,13 +351,18 @@ header {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  font-size: 4rem;
+  font-size: 2.8rem;
   z-index: 0;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
 
+#text > b {
+  text-align: center;
+}
+
 #text > span {
+  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -350,11 +379,17 @@ header {
 }
 
 .sec p {
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   color: var(--white);
   font-weight: 300;
   text-indent: 20px;
   text-align: justify;
+}
+
+@media (min-width: 1440px) {
+  .sec p{
+  font-size: 1.125rem;
+  }
 }
 
 .ava-wrapper {
@@ -396,24 +431,198 @@ header {
   cursor: pointer;
 }
 
+/* ********************** MOBILE MENU ************************** */
+
+#menu-toggle[type="checkbox"]:not(:checked),
+#menu-toggle[type="checkbox"]:checked {
+  display: none;
+}
+
+.menu-toggle-trigger,
+.menu-toggle-burger,
+.menu-toggle-burger:before,
+.menu-toggle-burger:after {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 2em;
+  height: 5px;
+  background-color: var(--bg-color);
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.menu-toggle-trigger {
+  height: 2rem;
+  background: none;
+}
+
+.menu-toggle-burger:before {
+  content: "";
+  top: 10px;
+  left: 0;
+}
+.menu-toggle-burger:after {
+  content: "";
+  top: 20px;
+  left: 0;
+}
+
+.menu-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-invers);
+  border-bottom-right-radius: 100%;
+  box-shadow: var(--active-wrapper-shadow);
+  z-index: 2;
+  -webkit-animation: checkboxUncheckedAnimation 0.35s both;
+  animation: checkboxUncheckedAnimation 0.35s both;
+}
+
+.menu-body-element,
+.menu-body-link {
+  display: none;
+  margin: 4.4em 0 -3.3em -0.1em;
+  font-weight: normal;
+  color: var(--bg-color);
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+}
+
+.menu-body-element {
+  text-indent: 2em;
+}
+
+.menu-body-link:hover {
+  display: block;
+  width: 0;
+  color: #282828;
+  background-color: #e2e2e2;
+  -webkit-animation: changeWidthOfElementAnimation 0.35s both;
+  animation: changeWidthOfElementAnimation 0.35s both;
+}
+
+#menu-toggle:checked + .menu-toggle-trigger + .menu-toggle-burger {
+  top: 20px;
+  transform: rotate(405deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#menu-toggle:checked + .menu-toggle-trigger + .menu-toggle-burger:before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#menu-toggle:checked + .menu-toggle-trigger + .menu-toggle-burger:after {
+  top: 0;
+  transform: rotate(90deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#menu-toggle:checked
+  + .menu-toggle-trigger
+  + .menu-toggle-burger
+  + .menu-body {
+  -webkit-animation: checkboxCheckedAnimation 1s
+    cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+#menu-toggle:checked
+  + .menu-toggle-trigger
+  ~ .menu-body
+  .menu-body-element,
+#menu-toggle:checked + .menu-toggle-trigger ~ .menu-body .menu-body-link {
+  display: block;
+}
+
+@-webkit-keyframes checkboxCheckedAnimation {
+  50% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@keyframes checkboxCheckedAnimation {
+  50% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@-webkit-keyframes checkboxUncheckedAnimation {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes checkboxUncheckedAnimation {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes changeWidthOfElementAnimation {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes changeWidthOfElementAnimation {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /* !======================= PORTFOLIO ==========================* */
 
 section.module h3 {
-  margin-block-end: 40px;
+  margin-block-end: 10px;
   font-size: 1.875rem;
 }
 
 section.module p {
-  margin-block-end: 40px;
-  font-size: 1rem;
+  margin-block-end: 1px;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
   section.module h3 {
+    margin-block-end: 40px;
     font-size: 2.625rem;
   }
   section.module p {
+    margin-block-end: 40px;
     font-size: 1.25rem;
   }
 }
@@ -544,7 +753,7 @@ section.module.parallax-1 {
   position: fixed;
   top: 85px;
   right: 10px;
-  z-index: 2;
+  z-index: 1;/*! как убрать?*/
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -567,11 +776,23 @@ section.module.parallax-1 {
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
-  margin-inline-end: 10px;
+  margin-inline-end: 0px;
   box-shadow: var(--active-wrapper-shadow);
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 767px) {
+  .menu nav ul {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu nav ul {
+    margin-inline-end: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .menu nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -580,14 +801,19 @@ section.module.parallax-1 {
 }
 
 .menu nav ul li {
-  color: var(--white);
+  color: var(--white); /*удалить ?*/
 }
 
 .menu nav ul li a {
   inline-size: 100px;
   max-inline-size: 150px;
-  display: block;
   padding: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu nav ul li a{
+  display: block;
+  }
 }
 
 .menu nav ul li.active a,
@@ -795,13 +1021,20 @@ section.module.parallax-1 {
   display: block;
   inline-size: 100px;
   block-size: 100px;
-  top: 150px;
-  right: 465px;
-  z-index: 1000;
+  top: 80px;
+  right: 238px;
+  z-index: 1000;/*! можно 1 ?*/
   margin-inline-end: 10px;
   margin-block-end: 10px;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .m .list-item {
+    top: 150px;
+    right: 465px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1137,10 +1370,25 @@ section.module.parallax-1 {
   gap: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .social-list {
+    flex-wrap: wrap;
+    max-inline-size: 130px;
+    justify-content: center;
+  }
+}
+
 .social-img {
-  inline-size: 55px;
-  block-size: 55px;
+  inline-size: 25px;
+  block-size: 25px;
   fill: var(--bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .social-img {
+    inline-size: 55px;
+    block-size: 55px;
+  }
 }
 
 .linkedin:hover {
