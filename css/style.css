@@ -729,7 +729,6 @@ section.module.parallax-1 {
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
-    background-size: contain;
   }
   section.module.parallax-11 {
     background-image: url("../images/portfolio/rental.jpg");
@@ -813,7 +812,7 @@ section.module.parallax-1 {
   position: fixed;
   top: 85px;
   right: 10px;
-  z-index: 1;/*! как убрать?*/
+  z-index: 1;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -837,12 +836,12 @@ section.module.parallax-1 {
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
-  box-shadow: var(--active-wrapper-shadow);
 }
 
 @media screen and (min-width: 768px) {
   .menu nav ul {
     margin-inline-end: 10px;
+    box-shadow: var(--active-wrapper-shadow);
   }
 }
 
@@ -855,7 +854,7 @@ section.module.parallax-1 {
 }
 
 .menu nav ul li {
-  color: var(--white); /*удалить ?*/
+  color: var(--white); 
 }
 
 .menu nav ul li a {
