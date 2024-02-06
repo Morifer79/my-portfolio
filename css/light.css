@@ -1,6 +1,6 @@
 body {
   --sky-color: #c7cbcc;
-  --sky-image: url("../images/theme/light-sky.jpg") no-repeat;
+  --sky-image: url("../images/theme/light-sky.jpg");
 }
 
 .twilight {

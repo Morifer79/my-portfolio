@@ -11,20 +11,40 @@ const homeTexts = {
     ua: "Головна",
     ru: "Главная",
   },
+  "home-mobile-home": {
+    en: "Home",
+    ua: "Головна",
+    ru: "Главная",
+  },
   "home-header-home": {
     en: "Home",
     ua: "Головна",
     ru: "Главная",
+  },
+  "home-mobile-portfolio": {
+    en: "Portfolio",
+    ua: "Портфоліо",
+    ru: "Портфолио",
   },
   "home-header-portfolio": {
     en: "Portfolio",
     ua: "Портфоліо",
     ru: "Портфолио",
   },
+  "home-mobile-gallery": {
+    en: "Gallery",
+    ua: "Галерея",
+    ru: "Галерея",
+  },
   "home-header-gallery": {
     en: "Gallery",
     ua: "Галерея",
     ru: "Галерея",
+  },
+  "home-mobile-documents": {
+    en: "Documents",
+    ua: "Документи",
+    ru: "Документы",
   },
   "home-header-documents": {
     en: "Documents",

@@ -216,7 +216,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media (min-width: 1440px) {
@@ -311,6 +311,7 @@ header {
   justify-content: center;
   align-items: center;
   block-size: 100vh;
+
 }
 
 .pure {
@@ -340,13 +341,8 @@ header {
   top: 0;
   left: 0;
   block-size: 100%;
+  inline-size: 100%;
   pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  .parallax img {
-    inline-size: 100%;
-  }
 }
 
 #text {
@@ -372,6 +368,7 @@ header {
 .sec {
   background: var(--bottle);
   padding: 30px;
+  overflow: hidden;
 }
 
 .sec h2 {
@@ -1423,6 +1420,20 @@ section.module.parallax-1 {
     margin: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+}
+/* !============================ CONTACTS ==============================* */
+
+@media (max-width: 767px) {
+  #contacts {
+    display: none;
+  }
+}
+
 /* !============================ FOOTER ==============================* */
 
 .footer {
