@@ -676,6 +676,10 @@ section.module.parallax-0 h2 {
   writing-mode: vertical-lr;
 }
 
+section.module.parallax-12 {
+  background-image: url("../images/portfolio/scss-crm-sm.jpg");
+}
+
 section.module.parallax-11 {
   background-image: url("../images/portfolio/rental-sm.jpg");
 }
@@ -726,6 +730,9 @@ section.module.parallax-1 {
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
+  }
+  section.module.parallax-12 {
+    background-image: url("../images/portfolio/scss-crm.jpg");
   }
   section.module.parallax-11 {
     background-image: url("../images/portfolio/rental.jpg");
