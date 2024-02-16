@@ -189,7 +189,7 @@ $('.button-flash').on('click', function() {
 // ***********************************************************
 
 const allLangs = ['en', 'ua', 'ru'];
-let currentLang = localStorage.getItem('language') || checkBrowserLang() || 'en';
+let currentLang = localStorage.getItem('language') || 'en';
 
 const langButtons = document.querySelectorAll("[data-btn]");
 const currentPathName = window.location.pathname;
@@ -636,12 +636,12 @@ function checkActiveLangButton() {
 }
 checkActiveLangButton();
 
-function checkBrowserLang() {
-  const navLang = navigator.language.slice(0, 2).toLowerCase();
-  const result = allLangs.some(el => {
-    return el === navLang;
-  })
-  if (result) {
-    return navLang;
-  }
-}
+// function checkBrowserLang() {
+//   const navLang = navigator.language.slice(0, 2).toLowerCase();
+//   const result = allLangs.some(el => {
+//     return el === navLang;
+//   })
+//   if (result) {
+//     return navLang;
+//   }
+// }
