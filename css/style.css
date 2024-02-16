@@ -676,6 +676,10 @@ section.module.parallax-0 h2 {
   writing-mode: vertical-lr;
 }
 
+section.module.parallax-13 {
+  background-image: url("../images/portfolio/next-crm-sm.jpg");
+}
+
 section.module.parallax-12 {
   background-image: url("../images/portfolio/scss-crm-sm.jpg");
 }
@@ -731,6 +735,10 @@ section.module.parallax-1 {
     background-size: cover;
     background-attachment: fixed;
   }
+  section.module.parallax-13 {
+    background-image: url("../images/portfolio/next_crm.jpg");
+  }
+
   section.module.parallax-12 {
     background-image: url("../images/portfolio/scss-crm.jpg");
   }
