@@ -168,59 +168,6 @@ header {
   box-shadow: var(--active-wrapper-shadow);
 }
 
-.buttons-box {
-  position: absolute;
-  top: 5px;
-  right: 40%;
-  padding: 5px;
-  box-shadow: var(--active-wrapper-shadow);
-  border-radius: 18px;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .buttons-box {
-    right: 16%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .buttons-box {
-    right: 41%;
-  }
-}
-
-.header-btn {
-  padding: 4px;
-  border: none;
-  border-radius: 50%;
-  background-color: transparent;
-  color: transparent;
-  cursor: pointer;
-  inline-size: 25px;
-  block-size: 25px;
-}
-
-.header-btn:not(:last-child) {
-  margin-inline-end: 6px;
-}
-
-.header-btn-active {
-  box-shadow: var(--active-shadow);
-}
-
-.header-btn-en {
-  background: 50% 50% no-repeat url(../images/flags/en.png);
-}
-
-.header-btn-ua {
-  background: 50% 50% no-repeat url(../images/flags/ua.png);
-}
-
-.header-btn-ru {
-  background: 50% 50% no-repeat url(../images/flags/ru.png);
-}
-
 .switcher {
   position: absolute;
   top: 5px;

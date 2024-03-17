@@ -81,10 +81,6 @@ section.module.parallax-0 h2.only-white {
   --top-color: #404040;
 }
 
-.header-btn-active {
-  --active-shadow: 0 0 0 4px #fff;
-}
-
 .switcher-status{
   --wrapper-shadow: 4px 0 4px #000, 0 4px 4px #000, -4px 0 4px #000,
     0 -4px 4px #000;
@@ -95,8 +91,7 @@ section.module.parallax-0 h2.only-white {
 .down:hover,
 .logo:hover,
 .navigation a:hover,
-.navigation a.active,
-.buttons-box{
+.navigation a.active {
   --active-wrapper-shadow: 4px 0 4px #fff, 0 4px 4px #fff, -4px 0 4px #fff,
     0 -4px 4px #fff;
 }
