@@ -1,17 +1,23 @@
-const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
-const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
-const darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)');
-const switcherRadios = document.querySelectorAll('.switcher-radio');
+const lightStyles = document.querySelectorAll(
+  "link[rel=stylesheet][media*=prefers-color-scheme][media*=light]"
+);
+const darkStyles = document.querySelectorAll(
+  "link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]"
+);
+const darkSchemeMedia = matchMedia("(prefers-color-scheme: dark)");
+const switcherRadios = document.querySelectorAll(".switcher-radio");
 
 function setupSwitcher() {
   const savedScheme = getSavedScheme();
 
   if (savedScheme !== null) {
-    const currentRadio = document.querySelector(`.switcher-radio[value=${savedScheme}]`);
+    const currentRadio = document.querySelector(
+      `.switcher-radio[value=${savedScheme}]`
+    );
     currentRadio.checked = true;
   }
   [...switcherRadios].forEach((radio) => {
-    radio.addEventListener('change', (e) => {
+    radio.addEventListener("change", (e) => {
       setScheme(e.target.value);
     });
   });
@@ -31,7 +37,7 @@ function setupScheme() {
 function setScheme(scheme) {
   switchMedia(scheme);
 
-  if (scheme === 'auto') {
+  if (scheme === "auto") {
     clearScheme();
   } else {
     saveScheme(scheme);
@@ -42,12 +48,12 @@ function switchMedia(scheme) {
   let lightMedia;
   let darkMedia;
 
-  if (scheme === 'auto') {
-    lightMedia = '(prefers-color-scheme: light)';
-    darkMedia = '(prefers-color-scheme: dark)';
+  if (scheme === "auto") {
+    lightMedia = "(prefers-color-scheme: light)";
+    darkMedia = "(prefers-color-scheme: dark)";
   } else {
-    lightMedia = (scheme === 'light') ? 'all' : 'not all';
-    darkMedia = (scheme === 'dark') ? "all" : "not all";
+    lightMedia = scheme === "light" ? "all" : "not all";
+    darkMedia = scheme === "dark" ? "all" : "not all";
   }
   [...lightStyles].forEach((link) => {
     link.media = lightMedia;
@@ -60,11 +66,11 @@ function switchMedia(scheme) {
 function getSystemScheme() {
   const darkScheme = darkSchemeMedia.matches;
 
-  return darkScheme ? 'dark' : 'light';
+  return darkScheme ? "dark" : "light";
 }
 
 function getSavedScheme() {
-  return localStorage.getItem('color-scheme');
+  return localStorage.getItem("color-scheme");
 }
 
 function saveScheme(scheme) {
@@ -72,7 +78,7 @@ function saveScheme(scheme) {
 }
 
 function clearScheme() {
-  localStorage.removeItem('color-scheme');
+  localStorage.removeItem("color-scheme");
 }
 
 setupSwitcher();
@@ -86,16 +92,18 @@ let hill1 = document.getElementById("hill1");
 let hill4 = document.getElementById("hill4");
 let hill5 = document.getElementById("hill5");
 
-window.addEventListener("scroll", () => {
-  let value = window.scrollY;
+if (window.location.pathname === "/index.html") {
+  window.addEventListener("scroll", () => {
+    let value = window.scrollY;
 
-  text.style.marginTop = value * 2.5 + "px";
-  leaf.style.top = value * -1.5 + "px";
-  leaf.style.left = value * 1.5 + "px";
-  hill5.style.left = value * 1.5 + "px";
-  hill4.style.left = value * -1.5 + "px";
-  hill1.style.top = value * 1 + "px";
-});
+    text.style.marginTop = value * 2.5 + "px";
+    leaf.style.top = value * -1.5 + "px";
+    leaf.style.left = value * 1.5 + "px";
+    hill5.style.left = value * 1.5 + "px";
+    hill4.style.left = value * -1.5 + "px";
+    hill1.style.top = value * 1 + "px";
+  });
+}
 
 // ************************************************
 
@@ -182,8 +190,8 @@ if (animatedElement) {
 
 // ***********************************************************
 
-$('.button-flash').on('click', function() {
-  $('.box').toggleClass('animated');
+$(".button-flash").on("click", function () {
+  $(".box").toggleClass("animated");
 });
 
 // ***********************************************************
