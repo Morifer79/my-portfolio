@@ -193,6 +193,3 @@ if (animatedElement) {
 $(".button-flash").on("click", function () {
   $(".box").toggleClass("animated");
 });
-
-// ***********************************************************
-console.log(window.location.pathname);
