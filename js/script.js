@@ -193,3 +193,16 @@ if (animatedElement) {
 $(".button-flash").on("click", function () {
   $(".box").toggleClass("animated");
 });
+
+
+document.getElementById("button1").addEventListener("click", function () {
+  document.querySelector(".first").classList.remove("hidden");
+  document.querySelector(".second").classList.add("hidden");
+});
+
+document.getElementById("button2").addEventListener("click", function () {
+  document.querySelector(".first").classList.add("hidden");
+  document.querySelector(".second").classList.remove("hidden");
+});
+
+document.getElementById("button1").click();

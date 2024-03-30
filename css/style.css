@@ -84,6 +84,10 @@ a:active {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -637,6 +641,10 @@ section.module.parallax-0 h2 {
   writing-mode: vertical-lr;
 }
 
+section.module.parallax-15 {
+  background-image: url("../images/portfolio/lingo-sm.jpg");
+}
+
 section.module.parallax-14 {
   background-image: url("../images/portfolio/quiz-preview-sm.jpg");
 }
@@ -699,6 +707,10 @@ section.module.parallax-1 {
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  section.module.parallax-15 {
+    background-image: url("../images/portfolio/lingo.jpg");
   }
 
   section.module.parallax-14 {
@@ -1039,6 +1051,14 @@ section.module.parallax-1 {
   transform: translateZ(800px);
   -webkit-transform: translateZ(800px);
   -moz-transform: translateZ(800px);
+}
+
+.btn-page {
+  cursor: pointer;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 18px;
 }
 
 /* *============= cube in gallery & contacts ==============* */
