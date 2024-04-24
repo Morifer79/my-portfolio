@@ -641,6 +641,10 @@ section.module.parallax-0 h2 {
   writing-mode: vertical-lr;
 }
 
+section.module.parallax-16 {
+  background-image: url("../images/portfolio/readme-sm.jpg");
+}
+
 section.module.parallax-15 {
   background-image: url("../images/portfolio/lingo-sm.jpg");
 }
@@ -707,6 +711,10 @@ section.module.parallax-1 {
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  section.module.parallax-16 {
+    background-image: url("../images/portfolio/readme.jpg");
   }
 
   section.module.parallax-15 {
