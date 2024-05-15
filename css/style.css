@@ -641,6 +641,10 @@ section.module.parallax-0 h2 {
   writing-mode: vertical-lr;
 }
 
+section.module.parallax-18 {
+  background-image: url("../images/portfolio/ad-sm.jpg");
+}
+
 section.module.parallax-17 {
   background-image: url("../images/portfolio/news-cast-sm.jpg");
 }
@@ -717,9 +721,14 @@ section.module.parallax-1 {
     background-attachment: fixed;
   }
 
+  section.module.parallax-18 {
+    background-image: url("../images/portfolio/ad.jpg");
+  }
+
   section.module.parallax-17 {
     background-image: url("../images/portfolio/news-cast.jpg");
   }
+
   section.module.parallax-16 {
     background-image: url("../images/portfolio/readme.jpg");
   }
@@ -739,6 +748,7 @@ section.module.parallax-1 {
   section.module.parallax-12 {
     background-image: url("../images/portfolio/scss-crm.jpg");
   }
+
   section.module.parallax-11 {
     background-image: url("../images/portfolio/rental.jpg");
   }
